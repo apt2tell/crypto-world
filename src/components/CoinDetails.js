@@ -3,11 +3,11 @@ import { useSelector } from 'react-redux';
 import Details from './Details';
 
 const CoinDetails = () => {
-  const coinsDetails = useSelector((state) => state.coins);
+  const coins = useSelector((state) => state.coins);
 
   return (
     <>
-      {coinsDetails.filter((coin) => coin.display === true).map((coin) => (
+      {coins.filter((coin) => coin.display === true).map((coin) => (
         <Details
           key={coin.id}
           id={coin.id}
@@ -15,6 +15,14 @@ const CoinDetails = () => {
           rank={coin.rank}
           name={coin.name}
           price={coin.price}
+          icon={coin.icon}
+          priceChange1h={coin.priceChange1h}
+          priceChange1d={coin.priceChange1d}
+          priceChange1w={coin.priceChange1w}
+          totalSupply={coin.totalSupply}
+          marketCap={coin.marketCap}
+          volume={coin.volume}
+          websiteUrl={coin.websiteUrl}
         />
       ))}
     </>

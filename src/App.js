@@ -1,22 +1,23 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import Coins from './components/Coins';
 import CoinDetails from './components/CoinDetails';
 import './App.css';
-import Search from './components/Search';
 import NavBar from './components/NavBar';
+import logo from './components/assets/logo.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Search />
+        <div className="top-menu">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="crypto">crypto world</h1>
+        </div>
         <NavBar />
         <Routes>
           <Route path="/" element={<Coins />} />
-          <Route path="/Details/:name" element={<CoinDetails />} />
+          <Route path="/details/:name" element={<CoinDetails />} />
         </Routes>
       </header>
     </div>

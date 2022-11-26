@@ -13,6 +13,7 @@ export const getCoinsAPI = createAsyncThunk(
   'coins/getCoins', async () => {
     const response = await axios.get(API);
     const coins = await response.data;
+    console.log(coins);
     return coins;
   }
 );
@@ -25,14 +26,17 @@ const coinsSlice = createSlice({
     coinDisplay: (state, action) => {
       const newState = state.map((item) => {
         if (item.symbol !== action.payload) return item;
-        return { ...coinDisplay, display: true };
+        return { ...item, display: true };
       });
       return newState;
     },
   },
   extraReducers: (builder) => {
     builder
-      .addCase(getCoinsAPI.fulfilled, ((state, action) => action.payload));
+      .addCase(getCoinsAPI.fulfilled, ((state, action) => action.payload.coins.map((coin) => ({
+        ...coin,
+        display: false,
+  }))));
   },
 });
 

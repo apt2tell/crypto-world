@@ -17,10 +17,11 @@ const Coin = ({
   return (
     <li className="coin-list">
       <Card
+        bg="primary"
         className="white-card"
         id={id}
         style={{
-          width: '100%', height: '160px', borderColor: '#fff', backgroundColor: '#f3f3f3',
+          width: '100%', height: '160px', borderColor: '#fff', bg: 'rgb(251,80,146)!',
         }}
       >
         <Card.Img
@@ -30,28 +31,39 @@ const Coin = ({
             backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', width: '55px', margin: '50px 0 50px',
           }}
         />
-        <Card.ImgOverlay
-          className="details"
-        >
-          <Card.Title>
-            <h3>{name}</h3>
-          </Card.Title>
-          <Card.Text>
-            $
-            {price}
-          </Card.Text>
-          <Card.Text>{symbol}</Card.Text>
-          <Card.Text>{rank}</Card.Text>
-          <Link
-            to={`/coinsDetails/${name}`}
-          >
-            <FiArrowRightCircle
-              className="arrow-icon"
-              onClick={displayCoin}
-            />
-          </Link>
+        <Card.ImgOverlay>
+          <div className="top">
+            <span className="rank">
+              rank
+              {rank}
+            </span>
+            <span>
+              <Link
+                to={`/details/${name}`}
+              >
+                <FiArrowRightCircle
+                  className="arrow-icon"
+                  onClick={displayCoin}
+                  style={{
+                    color: 'white', border: '1.5px solid white', borderRadius: '50%', padding: '3px', fontSize: '25px',
+                  }}
+                />
+              </Link>
+            </span>
+          </div>
+          <div className="details">
+            <Card.Title className="name">
+              {name}
+            </Card.Title>
+            <div className="floater">
+              <p className="symbol">{symbol}</p>
+              <p className="price">
+                $
+                {price}
+              </p>
+            </div>
+          </div>
         </Card.ImgOverlay>
-
       </Card>
     </li>
   );
