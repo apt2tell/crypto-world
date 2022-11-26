@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -13,7 +12,7 @@ const NavBar = () => {
 
   return (
     <ul>
-      <Navbar>
+      <nav>
         {views.map((view) => (
           <li key={view.id}>
             <Link
@@ -23,7 +22,7 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
-      </Navbar>
+      </nav>
     </ul>
   );
 };
