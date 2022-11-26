@@ -6,18 +6,13 @@ const NavBar = () => {
   const views = [
     {
       id: 1,
-      text: 'Home',
+      text: '',
       path: '/',
-    },
-    {
-      id: 1,
-      text: 'Details',
-      path: '/Details',
     },
   ];
 
   return (
-    <>
+    <ul>
       <Navbar>
         {views.map((view) => (
           <li key={view.id}>
@@ -29,7 +24,7 @@ const NavBar = () => {
           </li>
         ))}
       </Navbar>
-    </>
+    </ul>
   );
 };
 
