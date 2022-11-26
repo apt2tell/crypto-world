@@ -1,9 +1,21 @@
+
+@import url('https://fonts.cdnfonts.com/css/lato');
+
+.body {
+  font-family: 'lato', sans-serif;
+  font-size: 1rem;
+}
+
 .App {
   text-align: center;
+  background-image: url('./components/assets/bitcoin.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 150px;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -17,13 +29,130 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+.home-link {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(251, 80, 146, 0.5);
+}
+
+.gear-link {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(251, 80, 146, 0.5);
+}
+
+.top-menu {
+  display: flex;
+  gap: 50px;
+}
+
+.crypto {
+  font-family: 'lato', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.white-card {
+  background: rgba(251, 80, 146, 0.5);
+}
+
+.coins-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.coin-list {
+  display: flex;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 50%;
+  border-color: aqua;
+  border-radius: 50px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details {
+  font-size: 0.9rem;
 }
 
 .App-link {
   color: rgb(112, 76, 182);
+}
+
+.details-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  background: rgba(251, 80, 146, 0.5);
+}
+
+.coin-top {
+  display: flex;
+}
+
+.coin-title {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coinHeader {
+  display: flex;
+}
+
+.coin-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-body-title {
+  font-family: 'lato', sans-serif;
+  font-size: 1rem;
+}
+
+.coin-prices {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coin-time {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-supplies {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.coin-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-float {
