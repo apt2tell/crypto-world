@@ -1,6 +1,5 @@
 /* eslint-disable */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 // Initial state
 const initialState = [];
@@ -11,9 +10,8 @@ const API = 'https://api.coinstats.app/public/v1/coins';
 // Create Thunk
 export const getCoinsAPI = createAsyncThunk(
   'coins/getCoins', async () => {
-    const response = await axios.get(API);
-    const coins = await response.data;
-    console.log(coins);
+    const response = await fetch(API);
+    const coins = await response.json();
     return coins;
   }
 );
