@@ -28,7 +28,6 @@ You will select an API that provides numeric data about a topic that you like an
 - npm
 - babel
 - webpack-dev-server
-- duck pattern
 - API-REST
 
 ## Live Demo
