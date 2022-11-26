@@ -24,6 +24,7 @@ You will select an API that provides numeric data about a topic that you like an
 ## Built With
 
 - CSS, JavaScript, React, Redux
+- Github/workflows
 - Gitflow
 - npm
 - babel
@@ -31,7 +32,10 @@ You will select an API that provides numeric data about a topic that you like an
 - API-REST
 
 ## Live Demo
-> Check the [Live Demo](https://okechukwu-muokwugwo.github.io/react-redux-group-project/)
+> [Live Demo](https://okechukwu-muokwugwo.github.io/crypto-world/)
+
+## Live Presentation
+> Check the [Live](https://screenrec.com/share/k0D7R8KQ5C/)
 
 # Getting Started
 
@@ -40,7 +44,7 @@ You will select an API that provides numeric data about a topic that you like an
 #### Step 1:
 - Clone this repository in your local machine terminal:
 
-git clone <code>https://github.com/Okechukwu-muokwugwo/react-redux-group-project.git</code>
+git clone <code>https://github.com/Okechukwu-muokwugwo/crypto-world</code>
 
 #### Step 2:
 
