@@ -24,6 +24,7 @@ You will select an API that provides numeric data about a topic that you like an
 ## Built With
 
 - CSS, JavaScript, React, Redux
+- Github/workflows
 - Gitflow
 - npm
 - babel
