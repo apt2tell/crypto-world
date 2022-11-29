@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import Coins from './components/Coins';
 import CoinDetails from './components/CoinDetails';
 import './App.css';
-import NavBar from './components/NavBar';
 import logo from './components/assets/logo.png';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="crypto">crypto world</h1>
         </div>
-        <NavBar />
         <Routes>
           <Route path="/" element={<Coins />} />
           <Route path="/details/:name" element={<CoinDetails />} />
