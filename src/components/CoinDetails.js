@@ -1,12 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Details from './Details';
+import Search from './Search';
 
 const CoinDetails = () => {
   const coins = useSelector((state) => state.coins);
 
   return (
     <>
+      <Search />
       {coins.filter((coin) => coin.display === true).map((coin) => (
         <Details
           key={coin.id}
