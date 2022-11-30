@@ -9,9 +9,9 @@
 
 .App {
   text-align: center;
-  background-image: url('./components/assets/bitcoin-bg.jpg');
+  background-image: url('./components/assets/bitcoin.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .App-logo {
