@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/crypto-world/static/css/main.0484aa22.css",
+    "main.css": "/crypto-world/static/css/main.9a2c28f5.css",
     "main.js": "/crypto-world/static/js/main.cc0d4f30.js",
     "static/js/787.28cb0dcd.chunk.js": "/crypto-world/static/js/787.28cb0dcd.chunk.js",
-    "static/media/bitcoin-bg.jpg": "/crypto-world/static/media/bitcoin-bg.50c9f9b6613dfdd24a2e.jpg",
     "static/media/logo.png": "/crypto-world/static/media/logo.691d3cc287f1f68363c1.png",
+    "static/media/bitcoin.png": "/crypto-world/static/media/bitcoin.f21384fb0ec28f216d3b.png",
     "index.html": "/crypto-world/index.html",
-    "main.0484aa22.css.map": "/crypto-world/static/css/main.0484aa22.css.map",
+    "main.9a2c28f5.css.map": "/crypto-world/static/css/main.9a2c28f5.css.map",
     "main.cc0d4f30.js.map": "/crypto-world/static/js/main.cc0d4f30.js.map",
     "787.28cb0dcd.chunk.js.map": "/crypto-world/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0484aa22.css",
+    "static/css/main.9a2c28f5.css",
     "static/js/main.cc0d4f30.js"
   ]
 }
