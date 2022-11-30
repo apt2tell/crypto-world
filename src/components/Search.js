@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FiChevronLeft } from 'react-icons/fi';
-import { BsGear } from 'react-icons/bs';
+import { FaArrowLeft } from 'react-icons/fa';
+import { GoGear } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
 const Search = ({ input, setInput }) => (
@@ -11,7 +11,7 @@ const Search = ({ input, setInput }) => (
         className="home-link"
         to="/"
       >
-        <FiChevronLeft />
+        <FaArrowLeft />
       </Link>
       <input
         type="text"
@@ -19,7 +19,7 @@ const Search = ({ input, setInput }) => (
         value={input}
         onChange={setInput}
       />
-      <BsGear
+      <GoGear
         className="gear-link"
       />
     </nav>

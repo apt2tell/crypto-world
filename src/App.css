@@ -2,15 +2,16 @@
 @import url('https://fonts.cdnfonts.com/css/lato');
 
 .body {
+  box-sizing: border-box;
   font-family: 'lato', sans-serif;
   font-size: 1rem;
 }
 
 .App {
   text-align: center;
-  background-image: url('./components/assets/bitcoin.jpg');
+  background-image: url('./components/assets/bitcoin-bg.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 }
 
 .App-logo {
@@ -35,14 +36,15 @@
 .home-link {
   width: 50px;
   height: 50px;
+  padding-top: 0.3rem;
   color: #fff;
   border-radius: 50%;
   background: rgba(251, 80, 146, 0.5);
 }
 
 .gear-link {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: #fff;
   border-radius: 50%;
   background: rgba(251, 80, 146, 0.5);
@@ -50,11 +52,12 @@
 
 .top-menu {
   display: flex;
-  gap: 50px;
+  gap: 7.5rem;
 }
 
 .crypto {
   font-family: 'lato', sans-serif;
+  color: orchid;
 }
 
 ul {
@@ -85,7 +88,7 @@ ul {
 
 input {
   width: 50%;
-  border-color: aqua;
+  border-color: #0d6efd;
   border-radius: 50px;
 }
 
@@ -104,6 +107,8 @@ input {
 
 .details-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 70%;
   background: rgba(251, 80, 146, 0.5);
@@ -111,6 +116,11 @@ input {
 
 .coin-top {
   display: flex;
+  gap: 1rem;
+}
+
+.coin-top p {
+  font-size: 0.7rem;
 }
 
 .coin-title {
@@ -171,9 +181,7 @@ input {
 
 @media (max-width: 768px) {
   .details-wrapper {
-    display: flex;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
-    background: rgba(251, 80, 146, 0.5);
   }
 }

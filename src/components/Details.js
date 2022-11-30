@@ -13,12 +13,13 @@ const Details = ({
       <h2>{name}</h2>
       <p>{symbol}</p>
     </div>
+
     <div>
       <div className="info info-img">
         <img src={icon} alt="Crypto logo" className="coinImg" />
       </div>
       <div className="coin-top">
-        <Alert className="info">
+        <Alert variant="success" className="info">
           <Alert.Heading className="head-subtitle">Category:</Alert.Heading>
           <p className="coinCategory">
             {name}
@@ -26,13 +27,13 @@ const Details = ({
             Ecosystem
           </p>
         </Alert>
-        <Alert className="info">
+        <Alert variant="success" className="info">
           <Alert.Heading className="head-subtitle">CMC Rank:</Alert.Heading>
           <p>{rank}</p>
         </Alert>
-        <Alert className="info">
+        <Alert variant="success" className="info">
           <Alert.Heading className="head-subtitle">Market Price:</Alert.Heading>
-          <p>{price}</p>
+          <p className="text-md-start">{price}</p>
         </Alert>
       </div>
       <div className="coin-body">
@@ -42,6 +43,7 @@ const Details = ({
             <h3>7d:</h3>
             <p className="coinprice">{`%${priceChange1w}`}</p>
           </div>
+
           <div className="change">
             <h3>24h:</h3>
             <p className="coinprice">{`%${priceChange1d}`}</p>
