@@ -8,11 +8,13 @@ const Details = ({
   priceChange1h, priceChange1d, priceChange1w,
   totalSupply, marketCap, volume, websiteUrl,
 }) => (
-  <Card bg="primary" id={id} className="details-wrapper">
-    <div className="coin-title">
-      <h2>{name}</h2>
-      <p>{symbol}</p>
-    </div>
+  <Card bg="primary" variant="light" id={id} className="details-wrapper">
+    <Card.Header>
+      <div className="coin-title">
+        <h2>{name}</h2>
+        <p>{symbol}</p>
+      </div>
+    </Card.Header>
 
     <div>
       <div className="info info-img">
@@ -53,8 +55,10 @@ const Details = ({
             <p className="coinprice">{`%${priceChange1h}`}</p>
           </div>
         </Alert>
-        <div className="coin-time">
+        <Card.Subtitle>
           <h3 className="coin-body-title">Daily price tracking</h3>
+        </Card.Subtitle>
+        <div className="coin-time">
           <div className="supply hl">
             <h3>High 24h:</h3>
             <p className="coinprice">{`$${priceChange1d}`}</p>

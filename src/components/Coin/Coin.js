@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
-import { FiArrowRightCircle } from 'react-icons/fi';
+import { FaArrowRight } from 'react-icons/fa';
 import { coinDisplay } from '../../redux/coins/coinsSlice';
 
 const Coin = ({
@@ -41,7 +41,7 @@ const Coin = ({
               <Link
                 to={`/details/${name}`}
               >
-                <FiArrowRightCircle
+                <FaArrowRight
                   className="arrow-icon"
                   onClick={displayCoin}
                   style={{

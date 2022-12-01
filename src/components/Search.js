@@ -8,10 +8,9 @@ const Search = ({ input, setInput }) => (
   <>
     <nav className="search-wrapper">
       <Link
-        className="home-link"
         to="/"
       >
-        <FaArrowLeft />
+        <FaArrowLeft className="home-link" />
       </Link>
       <input
         type="text"

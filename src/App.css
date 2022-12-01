@@ -34,8 +34,8 @@
 }
 
 .home-link {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   padding-top: 0.3rem;
   color: #fff;
   border-radius: 50%;
@@ -88,8 +88,16 @@ ul {
 
 input {
   width: 50%;
-  border-color: #0d6efd;
+  border-color: rgba(251, 80, 146, 0.5);
   border-radius: 50px;
+}
+
+input:focus {
+  background: rgba(251, 80, 146, 0.1);
+}
+
+input::placeholder {
+  text-align: center;
 }
 
 .top {
@@ -150,7 +158,9 @@ input {
 
 .coin-time {
   display: flex;
-  flex-direction: column;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .coin-supplies {
