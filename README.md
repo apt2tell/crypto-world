@@ -58,12 +58,6 @@ git clone <code>https://github.com/Okechukwu-muokwugwo/crypto-world</code>
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/okeimuokwugwo/)
 - Twitter: [Twitter](https://twitter.com/excel4eva)
 
-👤 Tetteh Julius
-
-- GitHub: [GitHub](https://github.com/j-tee)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/julius-tetteh-0121ab7b/)
-- Twitter: [Twitter](https://twitter.com/JuliusTee)
-
 
 ## 🤝 Contributing
 
