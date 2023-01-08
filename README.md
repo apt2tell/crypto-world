@@ -34,9 +34,6 @@ You will select an API that provides numeric data about a topic that you like an
 ## Live Demo
 > [Live Demo](https://okechukwu-muokwugwo.github.io/crypto-world/)
 
-## Live Presentation
-> Check the [Live](https://screenrec.com/share/k0D7R8KQ5C/)
-
 # Getting Started
 
 ### To launch the project locally:
